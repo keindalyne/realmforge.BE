@@ -5,7 +5,7 @@ export async function seedPackItem() {
     await db.query('TRUNCATE pack_item RESTART IDENTITY CASCADE');
 
     const pack = await db.query(`SELECT id, name FROM equipment_pack`);
-    const item = await db.query(`SELECT id, index FROM equipment_list`);
+    const item = await db.query(`SELECT id, index FROM eqiupment`);
 
     const itemMap = Object.fromEntries(item.rows.map(r => [r.index, r.id]));
 

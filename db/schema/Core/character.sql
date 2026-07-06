@@ -49,7 +49,7 @@ CREATE TABLE character (
   -- ========================================
 
   spell_list TEXT[], -- optional array
-  equipment_list TEXT[],
+  eqiupment TEXT[],
 
   -- ========================================
   -- PAGE 2: SPELLCASTING

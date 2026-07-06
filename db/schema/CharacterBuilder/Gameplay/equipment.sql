@@ -1,9 +1,9 @@
-CREATE TABLE equipment_list (
+CREATE TABLE equipment (
     id SERIAL PRIMARY KEY,
     slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     category_id INTEGER REFERENCES equipment_category(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    weight INTEGER NOT NULL,
-    cost TEXT NOT NULL,
-    description TEXT[] NOT NULL
+    weight NUMERIC,
+    cost TEXT,
+    description TEXT[]
 );

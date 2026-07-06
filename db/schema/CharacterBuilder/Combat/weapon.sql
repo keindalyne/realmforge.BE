@@ -1,6 +1,6 @@
 CREATE TABLE weapon (
     id SERIAL PRIMARY KEY,
-    equipment_id INTEGER REFERENCES equipment_list(id) ON DELETE CASCADE,
+    equipment_id INTEGER REFERENCES eqiupment(id) ON DELETE CASCADE,
     weapon_category TEXT NOT NULL,        -- e.g., "Martial", "Simple"
     weapon_range TEXT NOT NULL,           -- e.g., "Melee", "Ranged"
     damage_dice TEXT NOT NULL,            -- e.g., "1d8"

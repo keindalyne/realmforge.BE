@@ -25,13 +25,13 @@ export async function seedArmor() {
       ['shield', 'Shield', 6, '10 gp', ['+2 to AC','Held item']]
     ];
 
-    // Batch insert into equipment_list
+    // Batch insert into eqiupment
     const values = armorList.map(a =>
       `('${a[0]}','${a[1]}',${armorCategoryId},${a[2]},'${a[3]}',ARRAY['${a[4].join("','")}'])`
     ).join(',');
 
     const result = await db.query(`
-      INSERT INTO equipment_list (index, name, category_id, weight, cost, description)
+      INSERT INTO eqiupment (index, name, category_id, weight, cost, description)
       VALUES ${values}
       RETURNING id, index
     `);

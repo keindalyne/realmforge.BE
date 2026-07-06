@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS traits;
 DROP TABLE IF EXISTS subspecies;
 DROP TABLE IF EXISTS species;
 DROP TABLE IF EXISTS equipment_packs;
-DROP TABLE IF EXISTS equipment_list;
+DROP TABLE IF EXISTS eqiupment;
 DROP TABLE IF EXISTS equipment_category;
 DROP TABLE IF EXISTS char_subclass;
 DROP TABLE IF EXISTS char_class;
