@@ -142,6 +142,7 @@ export async function seedEquipment () {
       // WEAPONS
       // ========================================
 
+      // SIMPLE MELEE WEAPONS
       {
         slug: 'club',
         name: 'Club',
@@ -175,12 +176,270 @@ export async function seedEquipment () {
         description: ['A light axe that']
       },
       {
+        slug: 'javelin',
+        name: 'Javelin',
+        categoryId: category.weapon,
+        weight: 2,
+        cost: '5 sp',
+        description: ['A thrown spear-like weapon.']
+      },
+      {
+        slug: 'light-hammer',
+        name: 'Light Hammer',
+        categoryId: category.weapon,
+        weight: 2,
+        cost: '2 gp',
+        description: ['A small hammer that can be thrown.']
+      },
+      {
         slug: 'longsword',
         name: 'Longsword',
         categoryId: category.weapon,
         weight: 3,
         cost: '15 gp',
         description: ['A martial melee weapon with a long blade.'],
+      },
+      {
+        slug: 'mace',
+        name: 'Mace',
+        categoryId: category.weapon,
+        weight: 4,
+        cost: '5 gp',
+        description: ['A heavy bludgeoning weapon.']
+      },
+      {
+        slug: 'quarterstaff',
+        name: 'Quarterstaff',
+        categoryId: category.weapon,
+        weight: 4,
+        cost: '2 sp',
+        description: ['A sturdy wooden staff.']
+      },
+      {
+        slug: 'sickle',
+        name: 'Sickle',
+        categoryId: category.weapon,
+        weight: 2,
+        cost: '1 gp',
+        description: ['A curved farming blade used as a weapon.']
+      },
+      {
+        slug: 'spear',
+        name: 'Spear',
+        categoryId: category.weapon,
+        weight: 3,
+        cost: '1 gp',
+        description: ['A versatile piercing weapon.']
+      },
+
+      // SIMPLE RANGED WEAPONS
+      {
+        slug: 'light-crossbow',
+        name: 'Light Crossbow',
+        categoryId: category.weapon,
+        weight: 5,
+        cost: '25 gp',
+        description: ['A simple ranged crossbow.']
+      },
+      {
+        slug: 'dart',
+        name: 'Dart',
+        categoryId: category.weapon,
+        weight: 0.25,
+        cost: '5 cp',
+        description: ['A small thrown projectile.']
+      },
+      {
+        slug: 'shortbow',
+        name: 'Shortbow',
+        categoryId: category.weapon,
+        weight: 2,
+        cost: '25 gp',
+        description: ['A simple wooden bow.']
+      },
+      {
+        slug: 'sling',
+        name: 'Sling',
+        categoryId: category.weapon,
+        weight: 0,
+        cost: '1 sp',
+        description: ['A simple ranged sling.']
+      },
+
+      // MARTIAL MELEE WEAPONS
+      { slug: 'battleaxe', name: 'Battleaxe', categoryId: category.weapon, weight: 4, cost: '10 gp', description: ['A martial axe with a broad blade.'] },
+      { 
+        slug: 'flail', 
+        name: 'Flail', 
+        categoryId: category.weapon, 
+        weight: 2, 
+        cost: '10 gp', 
+        description: ['A spiked striking weapon attached by chain.']
+      },
+      { 
+        slug: 'glaive', 
+        name: 'Glaive', 
+        categoryId: category.weapon, 
+        weight: 6, 
+        cost: '20 gp', 
+        description: ['A polearm with a single-edged blade.'] 
+      },
+      { 
+        slug: 'greataxe', 
+        name: 'Greataxe', 
+        categoryId: category.weapon, 
+        weight: 7, 
+        cost: '30 gp', 
+        description: ['A massive two-handed axe.'] 
+      },
+      { 
+        slug: 'greatsword', 
+        name: 'Greatsword', 
+        categoryId: category.weapon, 
+        weight: 6, 
+        cost: '50 gp', 
+        description: ['A large two-handed sword.'] 
+      },
+      { 
+        slug: 'halberd', 
+        name: 'Halberd', 
+        categoryId: category.weapon, 
+        weight: 6, 
+        cost: '20 gp', 
+        description: ['A polearm with an axe head and spike.'] 
+      },
+      { 
+        slug: 'lance', 
+        name: 'Lance', categoryId: category.weapon, weight: 6, cost: '10 gp', description: ['A long mounted weapon.'] },
+      { 
+        slug: 'longsword', 
+        name: 'Longsword', 
+        categoryId: category.weapon, 
+        weight: 3, c
+        ost: '15 gp', 
+        description: ['A versatile martial sword.'] 
+      },
+      { 
+        slug: 'maul', 
+        name: 'Maul', 
+        categoryId: category.weapon, 
+        weight: 10, 
+        cost: '10 gp', 
+        description: ['A massive two-handed hammer.'] 
+      },
+      { 
+        slug: 'morningstar', 
+        name: 'Morningstar', 
+        categoryId: category.weapon, 
+        weight: 4, 
+        cost: '15 gp', 
+        description: ['A spiked bludgeoning weapon.'] 
+      },
+      { 
+        slug: 'pike', 
+        name: 'Pike', 
+        categoryId: category.weapon, 
+        weight: 18, 
+        cost: '5 gp', 
+        description: ['A very long thrusting polearm.'] 
+      },
+      { 
+        slug: 'rapier', 
+        name: 'Rapier', 
+        categoryId: category.weapon, 
+        weight: 2, 
+        cost: '25 gp', 
+        description: ['A slender finesse sword.'] 
+      },
+      { 
+        slug: 'scimitar', 
+        name: 'Scimitar', 
+        categoryId: category.weapon, 
+        weight: 3, 
+        cost: '25 gp', 
+        description: ['A curved slashing sword.'] 
+      },
+      { 
+        slug: 'shortsword', 
+        name: 'Shortsword', 
+        categoryId: category.weapon, 
+        weight: 2, 
+        cost: '10 gp', 
+        description: ['A light martial sword.'] 
+      },
+      { 
+        slug: 'trident', 
+        name: 'Trident', 
+        categoryId: category.weapon, 
+        weight: 4, 
+        cost: '5 gp', 
+        description: ['A three-pronged pole weapon.'] 
+      },
+      { 
+        slug: 'war-pick', 
+        name: 'War Pick', 
+        categoryId: category.weapon, 
+        weight: 2, 
+        cost: '5 gp', 
+        description: ['A pointed military pick.'] 
+      },
+      { 
+        slug: 'warhammer', 
+        name: 'Warhammer', 
+        categoryId: category.weapon, 
+        weight: 5, 
+        cost: '15 gp', 
+        description: ['A heavy hammer used in battle.'] 
+      },
+      { 
+        slug: 'whip', 
+        name: 'Whip', 
+        categoryId: category.weapon, 
+        weight: 3, 
+        cost: '2 gp', 
+        description: ['A long flexible weapon with extended reach.'] 
+      },
+
+      // MARTIAL RANGED WEAPONS
+      { 
+        slug: 'blowgun', 
+        name: 'Blowgun', 
+        categoryId: category.weapon, 
+        weight: 1, 
+        cost: '10 gp', 
+        description: ['A tube used to fire darts.'] 
+      },
+      { 
+        slug: 'hand-crossbow', 
+        name: 'Hand Crossbow', 
+        categoryId: category.weapon, 
+        weight: 3, 
+        cost: '75 gp', 
+        description: ['A compact one-handed crossbow.'] 
+      },
+      { 
+        slug: 'heavy-crossbow', 
+        name: 'Heavy Crossbow', 
+        categoryId: category.weapon, 
+        weight: 18, 
+        cost: '50 gp', 
+        description: ['A powerful two-handed crossbow.']
+      },
+      { 
+        slug: 'longbow', 
+        name: 'Longbow', 
+        categoryId: category.weapon, 
+        weight: 2, 
+        cost: '50 gp', 
+        description: ['A large martial bow.'] 
+      },
+      { 
+        slug: 'net', 
+        name: 'Net', 
+        categoryId: category.weapon, 
+        weight: 3, 
+        cost: '1 gp', 
+        description: ['A weighted net used to restrain creatures.'] 
       },
 
       // ========================================
