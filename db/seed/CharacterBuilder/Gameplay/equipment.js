@@ -315,8 +315,8 @@ export async function seedEquipment () {
         slug: 'longsword', 
         name: 'Longsword', 
         categoryId: category.weapon, 
-        weight: 3, c
-        ost: '15 gp', 
+        weight: 3,
+        cost: '15 gp', 
         description: ['A versatile martial sword.'] 
       },
       { 
