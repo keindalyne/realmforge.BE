@@ -73,12 +73,44 @@ export async function seedEquipment () {
       // ADVENTURING GEAR
       // ========================================
       {
+        slug: 'acid-vial',
+        name: 'Acid (Vial)',
+        categoryId: category['adventuring-gear'],
+        weight: 1,
+        cost: '25 gp',
+        description: ['A breakable vial containing corrosive acid.'],
+      },
+      {
+        slug: 'alchemists-fire-flask',
+        name: "Alchemist's Fire (Flask)",
+        categoryId: ['adventuring-gear'],
+        weight: 1,
+        cost: '50 gp',
+        description: ['A flask of adhesive liquid that ignites when exposed to air.']
+      },
+      {
         slug: 'backpack',
         name: 'Backpack',
         categoryId: category['adventuring-gear'],
         weight: 5,
         cost: '2gp',
         description: ['Standard container for carrying gear.']
+      },
+      {
+        slug: 'ball-bearings',
+        name: 'Ball Bearings (Bag of 1,000)',
+        categoryId: category['adventuring-gear'],
+        weight: 2,
+        cost: '1 gp',
+        description: ['A pouch of small metal balls that can make an area difficult to cross safely.']
+      },
+      {
+        slug: 'barrel',
+        name: 'Barrel',
+        categoryId: category['adventuring-gear'],
+        weight: 70,
+        cost: '2 gp',
+        desctiption: ['A large wooden container for storing liquids or supplies.']
       },
       {
         slug: 'bedroll',
