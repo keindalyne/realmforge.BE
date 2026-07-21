@@ -121,6 +121,14 @@ export async function seedEquipment () {
         description: ['Sleeping gear used while traveling or camping.'],
       },
       {
+        slug: 'bell',
+        name: 'Bell',
+        categoryId: category['adventuring-gear'],
+        weight: 0,
+        cost: '1 gp',
+        description: ['A small metal bell that produces a clear ringing sound.']
+      },
+      {
         slug: 'tinderbox',
         name: 'Tinderbox',
         categoryId: category['adventuring-gear'],
