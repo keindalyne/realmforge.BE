@@ -2,7 +2,7 @@
 // const decoded = Buffer.from(encoded, 'base64').toString('utf8');
 // console.log(decoded);
 
-import db from '../client.js';
+import db from '../../client.js';
 
 // CREATE new user
 export async function createNewUser (first_name, last_name, email, username, password) {
