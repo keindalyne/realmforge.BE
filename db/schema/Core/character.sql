@@ -12,7 +12,7 @@ CREATE TABLE character (
   alignment TEXT,
   
   species_id INTEGER REFERENCES species(id),
-  class_id INTEGER REFERENCES class(id),
+  class_id INTEGER REFERENCES char_class(id),
   background_id INTEGER REFERENCES background(id),
 
   experiences_point INTEGER DEFAULT 0,
