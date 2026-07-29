@@ -6,8 +6,8 @@ export async function seedCharacters() {
 
     await db.query(`
       INSERT INTO characters (
-        user_id, name, age, alignment, appearance,
-        faction, deity, species, char_class, ability_score,
+        player_id, name, age, alignment, appearance,
+        faction, deity, species, character_class, ability_score,
         hometown, backstory, motivation, spell, equipment
       )
       VALUES (
@@ -20,7 +20,7 @@ export async function seedCharacters() {
           "constitution": 13,
           "intelligence": 12,
           "wisdom": 11,
-          "charisma": 18
+          "characterisma": 18
         }',
         'Shiverclaw Hold',
         'Exiled from her clan, Lyra wanders in search of redemption.',

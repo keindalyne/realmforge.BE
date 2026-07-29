@@ -3,11 +3,11 @@ import db from '../../../client.js';
 export async function seedClassProficiency() {
   try {
     // Get all class IDs
-    const charClass = await db.query(`SELECT id, name FROM char_class`);
+    const characterClass = await db.query(`SELECT id, name FROM character_class`);
     const prof = await db.query(`SELECT id, index FROM proficiency`);
 
     const profMap = Object.fromEntries(prof.rows.map(p => [p.index, p.id]));
-    const classMap = Object.fromEntries(charClass.rows.map(c => [c.name.toLowerCase(), c.id]));
+    const classMap = Object.fromEntries(characterClass.rows.map(c => [c.name.toLowerCase(), c.id]));
 
     const insert = [];
 

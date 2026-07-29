@@ -204,7 +204,7 @@ export async function seedDeities() {
         ARRAY['God of trade, negotiation, and value']
       ),
       ('myhriss','Myhriss','Neutral Good',
-        ARRAY['Love','Beauty','Charisma'],
+        ARRAY['Love','Beauty','Characterisma'],
         ARRAY['Goddess of beauty and romantic love']
       ),
       ('nerull','Nerull','Neutral Evil',
@@ -351,7 +351,7 @@ export async function seedDeities() {
         ARRAY['God of trade, negotiation, and value']
       ),
       ('myhriss','Myhriss','Neutral Good',
-        ARRAY['Love','Beauty','Charisma'],
+        ARRAY['Love','Beauty','Characterisma'],
         ARRAY['Goddess of beauty and romantic love']
       ),
       ('nerull','Nerull','Neutral Evil',

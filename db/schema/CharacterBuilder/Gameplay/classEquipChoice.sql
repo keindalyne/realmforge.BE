@@ -1,7 +1,7 @@
 CREATE TABLE class_equipment_choice (
     id SERIAL PRIMARY KEY,
     class_id INTEGER NOT NULL
-        REFERENCES char_class(id)
+        REFERENCES character_class(id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
     choice_order INTEGER NOT NULL,

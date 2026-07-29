@@ -1,10 +1,10 @@
 import db from '../../../client.js';
 
-export async function seedCharClass() {
+export async function seedCharacterClass() {
   try {
-    await db.query('TRUNCATE char_class RESTART IDENTITY CASCADE');
+    await db.query('TRUNCATE character_class RESTART IDENTITY CASCADE');
 
-    const charClass = [
+    const characterClass = [
       {
         index: 'barbarian',
         name: 'Barbarian',
@@ -21,7 +21,7 @@ export async function seedCharClass() {
         name: 'Bard',
         hit_die: 8,
         proficiency: ['light-armor', 'simple-weapon', 'hand-crossbows', 'longswords', 'rapiers', 'shortswords'],
-        saving_throw: ['dexterity', 'charisma'],
+        saving_throw: ['dexterity', 'characterisma'],
         description: [
           'An inspiring magician whose power echoes the music of creation.',
           'Bards use their talents to enchant, inspire, and confuse foes.'
@@ -32,7 +32,7 @@ export async function seedCharClass() {
         name: 'Cleric',
         hit_die: 8,
         proficiency: ['light-armor', 'medium-armor', 'shields', 'simple-weapon'],
-        saving_throw: ['wisdom', 'charisma'],
+        saving_throw: ['wisdom', 'characterisma'],
         description: [
           'A priestly champion who wields divine magic in service of a higher power.'
         ]
@@ -72,7 +72,7 @@ export async function seedCharClass() {
         name: 'Paladin',
         hit_die: 10,
         proficiency: ['all-armor', 'shields', 'simple-weapon', 'martial-weapon'],
-        saving_throw: ['wisdom', 'charisma'],
+        saving_throw: ['wisdom', 'characterisma'],
         description: [
           'A holy warrior bound to a sacred oath.'
         ]
@@ -102,7 +102,7 @@ export async function seedCharClass() {
         name: 'Sorcerer',
         hit_die: 6,
         proficiency: ['daggers', 'darts', 'slings', 'quarterstaffs', 'light-crossbows'],
-        saving_throw: ['constitution', 'charisma'],
+        saving_throw: ['constitution', 'characterisma'],
         description: [
           'A spellcaster who draws on inherent magic from a gift or bloodline.'
         ]
@@ -112,7 +112,7 @@ export async function seedCharClass() {
         name: 'Warlock',
         hit_die: 8,
         proficiency: ['light-armor', 'simple-weapon'],
-        saving_throw: ['wisdom', 'charisma'],
+        saving_throw: ['wisdom', 'characterisma'],
         description: [
           'A wielder of magic that is derived from a bargain with an extraplanar entity.'
         ]
@@ -124,14 +124,14 @@ export async function seedCharClass() {
         proficiency: ['daggers', 'darts', 'slings', 'quarterstaffs', 'light-crossbows'],
         saving_throw: ['intelligence', 'wisdom'],
         description: [
-          'A scholarly magic-user capable of manipulating the structures of reality.'
+          'A scholarly magic-player capable of manipulating the structures of reality.'
         ]
       }
     ];
 
-    for (const cls of charClass) {
+    for (const cls of characterClass) {
       const result = await db.query(`
-        INSERT INTO char_class (index, name, hit_die, description)
+        INSERT INTO character_class (index, name, hit_die, description)
         VALUES ($1, $2, $3, $4)
         RETURNING id;
       `, [cls.index, cls.name, cls.hit_die, cls.description]);
@@ -153,8 +153,8 @@ export async function seedCharClass() {
       }
     }
 
-    console.log('✅ char_class seed complete!');
+    console.log('✅ character_class seed complete!');
   } catch (err) {
-    console.error('❌ seedCharClass error:', err);
+    console.error('❌ seedCharacterClass error:', err);
   }
 }

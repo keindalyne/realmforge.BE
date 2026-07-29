@@ -6,7 +6,7 @@
 CREATE EXTENSION IF NOT EXISTS citext;
 
 -- Create all tables (dependency order)
-\i db/schema/users.sql;
+\i db/schema/players.sql;
 \i db/schema/class.sql;
 \i db/schema/subclass.sql;
 \i db/schema/equipmentCat.sql;

@@ -4,5 +4,5 @@ CREATE TABLE language (
     name TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL,
     script TEXT,
-    description TEXT[] NOT NULL
+    description TEXTNOT NULL
 );

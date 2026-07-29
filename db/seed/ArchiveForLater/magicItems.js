@@ -72,7 +72,7 @@ export async function seedMagicItems() {
             'Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d10 force damage and be encapsulated in a resilient sphere for 1 minute.'
         ]),
         ('belt-of-dwarvenkind', 'Belt of Dwarvenkind', 'Wondrous item', 'Rare', true, ARRAY[
-            'While wearing this belt, you gain advantage on Charisma (Persuasion) checks made to interact with dwarves.',
+            'While wearing this belt, you gain advantage on Characterisma (Persuasion) checks made to interact with dwarves.',
             'You have a 50 percent chance each day at dawn of growing a full beard if you’re capable of growing one.',
             'In addition, you gain various resistances and increases to Constitution checks and saving throws.'
         ]),
@@ -195,7 +195,7 @@ export async function seedMagicItems() {
             'Doubles hit points regained from Hit Dice.'
         ]),
         ('philter-of-love', 'Philter of Love', 'potion', 'uncommon', false, ARRAY[
-            'The next creature you see within 10 minutes after drinking this potion becomes charmed by you for 1 hour.',
+            'The next creature you see within 10 minutes after drinking this potion becomes charactermed by you for 1 hour.',
             'If the target is of a species and gender you are normally attracted to, it regards you as a true love.'
         ]),
         ('pipes-of-haunting', 'Pipes of Haunting', 'wondrous item', 'uncommon', true, ARRAY[
@@ -205,7 +205,7 @@ export async function seedMagicItems() {
         ]),
         ('pipes-of-the-sewers', 'Pipes of the Sewers', 'wondrous item', 'uncommon', true, ARRAY[
             'You can use an action to play these pipes and attract or command swarms of rats, depending on your performance.',
-            'Used primarily to summon or charm rat swarms.'
+            'Used primarily to summon or characterm rat swarms.'
         ]),
         ('plate-armor-of-etherealness', 'Plate Armor of Etherealness', 'armor', 'legendary', true, ARRAY[
             'This magic armor functions as plate armor and allows you to cast the etherealness spell once per day.',
@@ -219,12 +219,12 @@ export async function seedMagicItems() {
             'While wearing this pendant, you are immune to poison damage and the poisoned condition.'
         ]),
         ('ring-of-animal-influence', 'Ring of Animal Influence', 'ring', 'rare', true, ARRAY[
-            'This ring has 3 charges and regains charges daily at dawn.',
-            'You can expend charges to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
+            'This ring has 3 characterges and regains characterges daily at dawn.',
+            'You can expend characterges to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
         ]),
         ('ring-of-evasion', 'Ring of Evasion', 'ring', 'rare', true, ARRAY[
-            'This ring has 3 charges. When you fail a Dexterity saving throw, you can use your reaction to expend 1 charge to succeed instead.',
-            'The ring regains 1d3 expended charges daily at dawn.'
+            'This ring has 3 characterges. When you fail a Dexterity saving throw, you can use your reaction to expend 1 characterge to succeed instead.',
+            'The ring regains 1d3 expended characterges daily at dawn.'
         ]),
         ('ring-of-feather-falling', 'Ring of Feather Falling', 'ring', 'rare', true, ARRAY[
             'When you fall while wearing this ring, you descend slowly and take no damage from falling.',
@@ -242,8 +242,8 @@ export async function seedMagicItems() {
             'The DM chooses or allows you to choose the damage type.'
         ]),
         ('ring-of-the-ram', 'Ring of the Ram', 'ring', 'rare', true, ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'While wearing it, you can use an action to expend charges and unleash a forceful blast (like a ram) that deals force damage and can push creatures or objects.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'While wearing it, you can use an action to expend characterges and unleash a forceful blast (like a ram) that deals force damage and can push creatures or objects.'
         ]),
         ('robe-of-eyes', 'Robe of Eyes', 'wondrous item', 'rare', true, ARRAY[
             'This robe is covered in eyes and grants advantage on Wisdom (Perception) checks relying on sight.',
@@ -251,12 +251,12 @@ export async function seedMagicItems() {
             'You can also see invisible creatures and objects as well as into the Ethereal Plane.'
         ]),
         ('ring-of-animal-influence', 'Ring of Animal Influence', 'Ring', 'Rare', true, ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'While wearing the ring, you can use an action to expend 1 charge to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'While wearing the ring, you can use an action to expend 1 characterge to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
         ]),
         ('ring-of-evasion', 'Ring of Evasion', 'Ring', 'Rare', true, ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 charge to succeed instead.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 characterge to succeed instead.'
         ]),
         ('ring-of-feather-falling', 'Ring of Feather Falling', 'Ring', 'Rare', false, ARRAY[
             'When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.'
@@ -286,16 +286,16 @@ export async function seedMagicItems() {
             'The DM chooses the type or determines it randomly.'
         ]),
         ('ring-of-shooting-stars', 'Ring of Shooting Stars', 'Ring', 'Very Rare', true, ARRAY[
-            'This ring has 6 charges and regains 1d6 expended charges at dawn.',
+            'This ring has 6 characterges and regains 1d6 expended characterges at dawn.',
             'It can be used to cast Faerie Fire or Ball Lightning, or create Shooting Stars as magical projectiles.'
         ]),
         ('ring-of-animal-influence', 'Ring of Animal Influence', 'Ring', 'Rare', true, ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'While wearing the ring, you can use an action to expend 1 charge to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'While wearing the ring, you can use an action to expend 1 characterge to cast Animal Friendship, Fear (animals only), or Speak with Animals.'
         ]),
         ('ring-of-evasion', 'Ring of Evasion', 'Ring', 'Rare', true, ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 charge to succeed instead.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 characterge to succeed instead.'
         ]),
         ('ring-of-feather-falling', 'Ring of Feather Falling', 'Ring', 'Rare', false, ARRAY[
             'When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.'
@@ -325,7 +325,7 @@ export async function seedMagicItems() {
             'The DM chooses the type or determines it randomly.'
         ]),
         ('ring-of-shooting-stars', 'Ring of Shooting Stars', 'Ring', 'Very Rare', true, ARRAY[
-            'This ring has 6 charges and regains 1d6 expended charges at dawn.',
+            'This ring has 6 characterges and regains 1d6 expended characterges at dawn.',
             'It can be used to cast Faerie Fire or Ball Lightning, or create Shooting Stars as magical projectiles.'
         ]),
         ('saddle-of-the-cavalier', 'Saddle of the Cavalier', 'wondrous item', 'uncommon', false, ARRAY[
@@ -369,8 +369,8 @@ export async function seedMagicItems() {
         ], false),
 
         ('ring-of-animal-influence', 'Ring of Animal Influence', 'ring', 'rare', ARRAY[
-            'This ring has 3 charges and regains 1d3 expended charges daily at dawn.',
-            'You can use an action to expend charges to cast Animal Friendship, Fear (beasts only), or Speak with Animals.'
+            'This ring has 3 characterges and regains 1d3 expended characterges daily at dawn.',
+            'You can use an action to expend characterges to cast Animal Friendship, Fear (beasts only), or Speak with Animals.'
         ], true),
 
         ('ring-of-blinking', 'Ring of Blinking', 'ring', 'rare', ARRAY[
@@ -405,7 +405,7 @@ export async function seedMagicItems() {
 
         ('ring-of-shooting-stars', 'Ring of Shooting Stars', 'ring', 'very rare', ARRAY[
             'While wearing this ring in dim light or darkness, you can cast Dancing Lights and Light at will.',
-            'It has 6 charges for casting Faerie Fire, Ball Lightning, and Shooting Stars.'
+            'It has 6 characterges for casting Faerie Fire, Ball Lightning, and Shooting Stars.'
         ], true),
 
         ('ring-of-spell-storing', 'Ring of Spell Storing', 'ring', 'rare', ARRAY[
@@ -414,18 +414,18 @@ export async function seedMagicItems() {
         ], true),
         ('staff-of-the-woodlands', 'Staff of the Woodlands', 'staff', 'very rare', true, ARRAY[
             'This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls.',
-            'It has 10 charges and regains 1d6 + 4 expended charges daily at dawn.',
+            'It has 10 characterges and regains 1d6 + 4 expended characterges daily at dawn.',
             'It can be used to cast spell such as barkskin, pass without tspecies, or wall of thorns.',
             'You can use an action to plant the staff in earth and transform it into a healthy tree.'
         ]),
         ('staff-of-thunder-and-lightning', 'Staff of Thunder and Lightning', 'staff', 'very rare', true, ARRAY[
             'This staff can be used as a magic quarterstaff that grants a +2 bonus to attack and damage rolls.',
-            'It has 10 charges and can be used to deal thunder or lightning effects with melee attacks.',
-            'It also allows casting of lightning bolt or thunderclap effects when charges are expended.'
+            'It has 10 characterges and can be used to deal thunder or lightning effects with melee attacks.',
+            'It also allows casting of lightning bolt or thunderclap effects when characterges are expended.'
         ]),
         ('staff-of-withering', 'Staff of Withering', 'staff', 'rare', true, ARRAY[
             'This magic quarterstaff grants a +1 bonus to attack and damage rolls.',
-            'When you hit a creature with it, you can expend 1 charge to deal extra necrotic damage and reduce the target’s Strength score.'
+            'When you hit a creature with it, you can expend 1 characterge to deal extra necrotic damage and reduce the target’s Strength score.'
         ]),
         ('stone-of-controlling-earth-elementals', 'Stone of Controlling Earth Elementals', 'wondrous item', 'rare', false, ARRAY[
             'If you are holding this stone, you can use an action to speak its command word and summon an earth elemental.',
@@ -445,9 +445,9 @@ export async function seedMagicItems() {
             'If you are flying when the duration expires, you descend at 30 feet per round until you land.'
         ]),
         ('wand-of-winter', 'Wand of Winter', 'Wand', 'Rare', true, ARRAY[
-            'This wand has 7 charges. While holding it, you can expend charges to cast the following spell: ray of frost (0 charges), sleet storm (3 charges), and ice storm (4 charges).',
-            'The wand regains 1d6 + 1 expended charges daily at dawn.',
-            'If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into shards of ice and is destroyed.'
+            'This wand has 7 characterges. While holding it, you can expend characterges to cast the following spell: ray of frost (0 characterges), sleet storm (3 characterges), and ice storm (4 characterges).',
+            'The wand regains 1d6 + 1 expended characterges daily at dawn.',
+            'If you expend the wand’s last characterge, roll a d20. On a 1, the wand crumbles into shards of ice and is destroyed.'
         ]),
         ('weapon-vicious', 'Vicious Weapon', 'Weapon', 'Rare', false, ARRAY[
             'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.'
@@ -474,9 +474,9 @@ export async function seedMagicItems() {
             'Once per day, you can cast *dragon’s breath* (save DC 16).'
         ]),
         ('yew-wand-of-frost', 'Yew Wand of Frost', 'wand', 'very rare', true, ARRAY[
-            'This wand has 7 charges. While holding it, you can expend 1 or more charges to cast *ray of frost* (1 charge), *ice storm* (4 charges), or *cone of cold* (5 charges).',
-            'The wand regains 1d6 + 1 expended charges daily at dawn.',
-            'If you expend the last charge, roll a d20. On a 1, the wand crumbles into slush.'
+            'This wand has 7 characterges. While holding it, you can expend 1 or more characterges to cast *ray of frost* (1 characterge), *ice storm* (4 characterges), or *cone of cold* (5 characterges).',
+            'The wand regains 1d6 + 1 expended characterges daily at dawn.',
+            'If you expend the last characterge, roll a d20. On a 1, the wand crumbles into slush.'
         ]),
         ('zurzarak-signet', 'Zurzarak’s Signet', 'ring', 'rare', true, ARRAY[
             'This ornate silver ring grants resistance to necrotic damage.',

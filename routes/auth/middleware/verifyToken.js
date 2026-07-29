@@ -8,8 +8,8 @@ export function verifyToken (req, res, next) {
     if (!token) return res.status(401).json({ error: 'Missing token.' });
     if (!authHeader) return res.status(401).json({ error: 'Authorization header required.' });
     try {
-        const user = jwt.verify(token, SECRET);
-        req.user = user;
+        const player = jwt.verify(token, SECRET);
+        req.player = player;
         next();
     } catch (error) {
         return res.status(401).json({ error: 'Invalid or expired token.' });

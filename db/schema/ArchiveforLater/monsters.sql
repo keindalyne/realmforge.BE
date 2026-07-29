@@ -16,7 +16,7 @@ CREATE TABLE monsters (
     constitution INTEGER NOT NULL,
     intelligence INTEGER NOT NULL,
     wisdom INTEGER NOT NULL,
-    charisma INTEGER NOT NULL,
+    characterisma INTEGER NOT NULL,
     proficiency JSONB,
     damage_vulnerabilities TEXT[],
     damage_resistances TEXT[],

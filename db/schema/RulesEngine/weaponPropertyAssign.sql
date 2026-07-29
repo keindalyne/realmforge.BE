@@ -1,5 +1,12 @@
-CREATE TABLE weapon_property_assignments (
-  weapon_id INTEGER REFERENCES weapon(id) ON DELETE CASCADE,
-  property_id INTEGER REFERENCES weapon_properties(id) ON DELETE CASCADE,
-  PRIMARY KEY (weapon_id, property_id)
+CREATE TABLE weapon_property_assignment (
+  id SERIAL PRIMARY KEY,
+  weapon_slug TEXT NOT NULL
+      REFERENCES weapon(slug)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE,
+  weapon_property_slug TEXT NOT NULL
+      REFERENCES weapon_property(slug)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE,
+  UNIQUE (weapon_slug, property_slug)
 );

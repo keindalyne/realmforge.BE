@@ -1,5 +1,12 @@
 CREATE TABLE class_proficiency (
     id SERIAL PRIMARY KEY,
-    class_id INTEGER REFERENCES char_class(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    proficiency_id INTEGER REFERENCES proficiency(id) ON DELETE CASCADE ON UPDATE CASCADE
+    class_slug TEXT NOT NULL 
+        REFERENCES character_class(slug) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE,
+    proficiency_slug TEXT NOT NULL 
+        REFERENCES proficiency(slug) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE,
+    UNIQUE (class_slug, proficiency_slug)
 );

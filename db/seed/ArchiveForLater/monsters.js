@@ -9,7 +9,7 @@ export async function seedMonsters() {
             INSERT INTO monsters (
                 index, name, size, type, subtype, alignment,
                 armor_class, hit_points, hit_dice, speed, xp,
-                strength, dexterity, constitution, intelligence, wisdom, charisma,
+                strength, dexterity, constitution, intelligence, wisdom, characterisma,
                 description, actions, legendary_actions, proficiency
             ) VALUES
             (
@@ -18,7 +18,7 @@ export async function seedMonsters() {
                 21, 9, 15, 18, 15, 18,
                 ARRAY['An ancient, amphibious aberration with vast psionic powers.'],
                 '[{"name": "Multiattack", "desc": "The aboleth makes three tentacle attacks."}, {"name": "Tentacle", "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."}]',
-                '[{"name": "Enslave", "desc": "The aboleth targets one creature it can see within 30 feet. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed."}]',
+                '[{"name": "Enslave", "desc": "The aboleth targets one creature it can see within 30 feet. The target must succeed on a DC 14 Wisdom saving throw or be magically charactermed."}]',
                 'Perception +10, Stealth +6'
             ),
             (
@@ -223,7 +223,7 @@ export async function seedMonsters() {
                 'boar', 'Boar', 'Medium', 'beast', null, 'unaligned',
                 11, 11, '2d8', '{"walk":"40 ft."}', 50,
                 13, 11, 12, 2, 9, 5,
-                ARRAY['A feral pig with a powerful charge.'],
+                ARRAY['A feral pig with a powerful characterge.'],
                 '[{"name":"Tusk", "desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."}]',
                 '[]',
                 ''
@@ -314,7 +314,7 @@ export async function seedMonsters() {
                 14, 114, '12d10+48', '{"fly":"60 ft.","walk":"30 ft."}', 2300,
                 19, 11, 19, 3, 14, 10,
                 ARRAY['A monstrous hybrid of lion, goat, and dragon.'],
-                '[{"name":"Fire Breath", "desc":"(Recharge 5–6) The dragon head exhales fire in a 15-ft cone (Dex DC 15)."}]',
+                '[{"name":"Fire Breath", "desc":"(Recharacterge 5–6) The dragon head exhales fire in a 15-ft cone (Dex DC 15)."}]',
                 '[]',
                 'Perception +5'
             ),
@@ -520,8 +520,8 @@ export async function seedMonsters() {
                 'faerie-dragon', 'Faerie Dragon (Young)', 'Tiny', 'dragon', null, 'chaotic good',
                 15, 10, '3d4+3', '{"fly":"60 ft.","walk":"10 ft."}', 200,
                 3, 20, 13, 14, 15, 16,
-                ARRAY['A prank-loving dragon with invisibility and charm magic.'],
-                '[{"name":"Euphoria Breath", "desc":"Each creature in a 15-foot cone must succeed on a DC 11 Wisdom save or become charmed for 1 minute."}]',
+                ARRAY['A prank-loving dragon with invisibility and characterm magic.'],
+                '[{"name":"Euphoria Breath", "desc":"Each creature in a 15-foot cone must succeed on a DC 11 Wisdom save or become charactermed for 1 minute."}]',
                 '[]',
                 'Arcana +4, Perception +3, Stealth +7'
             ),
@@ -673,8 +673,8 @@ export async function seedMonsters() {
                 'faerie-dragon', 'Faerie Dragon (Young)', 'Tiny', 'dragon', null, 'chaotic good',
                 15, 10, '3d4+3', '{"fly":"60 ft.","walk":"10 ft."}', 200,
                 3, 20, 13, 14, 15, 16,
-                ARRAY['A prank-loving dragon with invisibility and charm magic.'],
-                '[{"name":"Euphoria Breath", "desc":"Each creature in a 15-foot cone must succeed on a DC 11 Wisdom save or become charmed for 1 minute."}]',
+                ARRAY['A prank-loving dragon with invisibility and characterm magic.'],
+                '[{"name":"Euphoria Breath", "desc":"Each creature in a 15-foot cone must succeed on a DC 11 Wisdom save or become charactermed for 1 minute."}]',
                 '[]',
                 'Arcana +4, Perception +3, Stealth +7'
             ),
@@ -907,7 +907,7 @@ export async function seedMonsters() {
                 'giant-goat', 'Giant Goat', 'Large', 'beast', null, 'unaligned',
                 11, 19, '3d10+3', '{"walk":"40 ft."}', 100,
                 17, 11, 12, 3, 12, 6,
-                ARRAY['A larger, tougher breed of goat with a deadly charge.'],
+                ARRAY['A larger, tougher breed of goat with a deadly characterge.'],
                 '[{"name":"Ram", "desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage."}]',
                 '[]',
                 'Perception +3'
@@ -1555,7 +1555,7 @@ export async function seedMonsters() {
                 'minotaur', 'Minotaur', 'Large', 'monstrosity', null, 'chaotic evil',
                 14, 76, '9d10+27', '{"walk":"40 ft."}', 700,
                 18, 11, 16, 6, 16, 9,
-                ARRAY['A horned labyrinth-stalker that charges with devastating force.'],
+                ARRAY['A horned labyrinth-stalker that characterges with devastating force.'],
                 '[{"name":"Greataxe","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing."}]',
                 '[]',
                 'Perception +5'
@@ -1888,7 +1888,7 @@ export async function seedMonsters() {
                 'rhinoceros', 'Rhinoceros', 'Large', 'beast', null, 'unaligned',
                 11, 45, '6d10+12', '{"walk":"40 ft."}', 200,
                 21, 8, 15, 2, 12, 6,
-                ARRAY['A thick-skinned herbivore that charges with a deadly horn.'],
+                ARRAY['A thick-skinned herbivore that characterges with a deadly horn.'],
                 '[{"name":"Gore","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning."}]',
                 '[]',
                 'Perception +2'
@@ -2177,7 +2177,7 @@ export async function seedMonsters() {
                 15, 66, '12d8+12', '{"fly":"60 ft.","walk":"30 ft."}', 1800,
                 8, 17, 13, 15, 12, 20,
                 ARRAY['A fiend who tempts mortals with beauty and drains their life force.'],
-                '[{"name":"Charm","desc":"The fiend targets one humanoid it can see within 30 ft. The target must succeed on a DC 15 Wisdom saving throw or be magically charmed."}]',
+                '[{"name":"Characterm","desc":"The fiend targets one humanoid it can see within 30 ft. The target must succeed on a DC 15 Wisdom saving throw or be magically charactermed."}]',
                 '[]',
                 'Deception +9, Persuasion +9'
             ),
@@ -2302,7 +2302,7 @@ export async function seedMonsters() {
                 'triceratops', 'Triceratops', 'Huge', 'beast', null, 'unaligned',
                 13, 95, '10d12+30', '{"walk":"50 ft."}', 1800,
                 22, 9, 17, 2, 11, 5,
-                ARRAY['A massive three-horned dinosaur that charges with unstoppable force.'],
+                ARRAY['A massive three-horned dinosaur that characterges with unstoppable force.'],
                 '[{"name":"Gore","desc":"Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) piercing."}]',
                 '[]',
                 ''
@@ -2410,7 +2410,7 @@ export async function seedMonsters() {
                 'warhorse', 'Warhorse', 'Large', 'beast', null, 'unaligned',
                 11, 19, '3d10+3', '{"walk":"60 ft."}', 100,
                 18, 12, 13, 2, 12, 7,
-                ARRAY['A trained charger that tramples enemies under iron-shod hooves.'],
+                ARRAY['A trained characterger that tramples enemies under iron-shod hooves.'],
                 '[{"name":"Hooves","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning."}]',
                 '[]',
                 ''

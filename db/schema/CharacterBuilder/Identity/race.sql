@@ -3,9 +3,6 @@ CREATE TABLE species (
     slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     speed INTEGER NOT NULL,
-    ability_bonus JSONB NOT NULL,
-    alignment TEXT NOT NULL,
-    age INTEGER NOT NULL,
     size TEXT NOT NULL,
-    size_desc TEXT[] NOT NULL
+    description TEXT NOT NULL
 );

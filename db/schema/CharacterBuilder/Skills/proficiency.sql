@@ -1,5 +1,7 @@
 CREATE TABLE proficiency (
     id SERIAL PRIMARY KEY,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
-    type proficiency_type NOT NULL
+    type TEXT NOT NULL,
+    description TEXT NOT NULL
 );

@@ -36,7 +36,7 @@ export async function seedSpecies() {
         'Slender, gspeciesful, about 5–6 feet tall.',
         'You can speak, read, and write Common and Elvish.',
         ARRAY['Common','Elvish'],
-        '[{"name":"Darkvision","desc":"60 ft."},{"name":"Keen Senses","desc":"Proficiency in Perception."},{"name":"Fey Ancestry","desc":"Advantage on saves vs. being charmed; magic can’t put you to sleep."},{"name":"Trance","desc":"Meditate for 4 hours instead of sleep."}]',
+        '[{"name":"Darkvision","desc":"60 ft."},{"name":"Keen Senses","desc":"Proficiency in Perception."},{"name":"Fey Ancestry","desc":"Advantage on saves vs. being charactermed; magic can’t put you to sleep."},{"name":"Trance","desc":"Meditate for 4 hours instead of sleep."}]',
         '[{"index":"high-elf","name":"High Elf","ability_bonuses":{"INT":1},"traits":[{"name":"Elf Weapon Training","desc":"Proficiency with longsword, shortsword, shortbow, longbow."},{"name":"Cantrip","desc":"One wizard cantrip (INT)."},{"name":"Extra Language","desc":"One additional language."}]},{"index":"wood-elf","name":"Wood Elf","ability_bonuses":{"WIS":1},"traits":[{"name":"Elf Weapon Training","desc":"Proficiency with longsword, shortsword, shortbow, longbow."},{"name":"Fleet of Foot","desc":"Base speed 35 ft."},{"name":"Mask of the Wild","desc":"Can attempt to hide lightly obscured by natural phenomena."}]}]'
       ),
       (
@@ -56,7 +56,7 @@ export async function seedSpecies() {
         'About human size, combining human and elven feature.',
         'You can speak, read, and write Common, Elvish, and one extra language of your choice.',
         ARRAY['Common','Elvish'],
-        '[{"name":"Darkvision","desc":"60 ft."},{"name":"Fey Ancestry","desc":"Advantage on saves vs. being charmed; magic can’t put you to sleep."},{"name":"Skill Versatility","desc":"Proficiency in any two skills of your choice."}]',
+        '[{"name":"Darkvision","desc":"60 ft."},{"name":"Fey Ancestry","desc":"Advantage on saves vs. being charactermed; magic can’t put you to sleep."},{"name":"Skill Versatility","desc":"Proficiency in any two skills of your choice."}]',
         '[]'
       ),
       (

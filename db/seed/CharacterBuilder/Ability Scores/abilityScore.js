@@ -37,9 +37,9 @@ export async function seedAbilityScore() {
         ]
       ),
       (
-        'charisma', 'Charisma',
+        'characterisma', 'Characterisma',
         ARRAY[
-          'Charisma measures your ability to interact effectively with others. It includes such factors as confidence and eloquence.'
+          'Characterisma measures your ability to interact effectively with others. It includes such factors as confidence and eloquence.'
         ]
       );
     `);

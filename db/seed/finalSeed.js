@@ -8,7 +8,7 @@ import { seedAbilityScores } from "./abilityScores.js";
 import { seedArmor } from "./armor.js";
 import { seedArmorProficiency } from "./armorProficiency.js";
 import { seedCharacters } from "./characters.js";
-import { seedCharClass } from "./class.js";
+import { seedCharacterClass } from "./class.js";
 import { seedClassProficiency } from "./classProficiency.js";
 import { seedDeities } from "./deities.js";
 import { seedEquipmentList } from "./equipment.js";
@@ -22,7 +22,7 @@ async function runSeeds() {
     await seedArmor();
     await seedArmorProficiency();
     await seedCharacters();
-    await seedCharClass();
+    await seedCharacterClass();
     await seedClassProficiency();
     await seedDeities();
     await seedEquipmentList();

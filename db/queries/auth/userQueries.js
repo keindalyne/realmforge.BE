@@ -4,42 +4,42 @@
 
 import db from '../../client.js';
 
-// CREATE new user
-export async function createNewUser (first_name, last_name, email, username, password) {
+// CREATE new player
+export async function createNewPlayer (first_name, last_name, email, playername, password) {
     try {
         const result = await db.query(
-            `INSERT INTO users (first_name, last_name, email, username, password)
+            `INSERT INTO players (first_name, last_name, email, playername, password)
             VALUES ($1, $2, $3, $4, $5)
             RETURNING *;`,
-        [first_name, last_name, email, username, password]
+        [first_name, last_name, email, playername, password]
         );
         return result.rows[0];
     } catch (error) {
-        console.error('Error creating user. Try again.', error.message);
+        console.error('Error creating player. Try again.', error.message);
         throw error;
     }
 }
 
-// LOGIN user
-export async function getLogin (username) {
+// LOGIN player
+export async function getLogin (playername) {
     try {
         const result = await db.query(
-            `SELECT * FROM users WHERE username = $1`,
-            [username]
+            `SELECT * FROM players WHERE playername = $1`,
+            [playername]
         );
         return result.rows[0];
     } catch (error) {
-        console.error('Error logging in. Username incorrect. Please try again.', error.message);
+        console.error('Error logging in. Playername incorrect. Please try again.', error.message);
         throw error;
     }
 }
 
-// CHECK new users have a unique username & GET user info by Username for profile display
-export async function getUserByUsername (username) {
+// CHECK new players have a unique playername & GET player info by Playername for profile display
+export async function getPlayerByPlayername (playername) {
     try {
         const result = await db.query(
-            `SELECT * FROM users WHERE username = $1`,
-            [username]
+            `SELECT * FROM players WHERE playername = $1`,
+            [playername]
         );
         return result.rows[0];
     } catch (error) {
@@ -48,11 +48,11 @@ export async function getUserByUsername (username) {
     }
 }
 
-// CHECK new users have a unique email & GET user info by Email for admin functions like account retrieval
-export async function getUserByEmail (email) {
+// CHECK new players have a unique email & GET player info by Email for admin functions like account retrieval
+export async function getPlayerByEmail (email) {
     try {
         const result = await db.query(
-            `SELECT * FROM users where email = $1`,
+            `SELECT * FROM players where email = $1`,
             [email]
         );
         return result.rows[0];
@@ -62,11 +62,11 @@ export async function getUserByEmail (email) {
     }
 }
 
-// GET user by ID
-export async function getUserById (id) {
+// GET player by ID
+export async function getPlayerById (id) {
     try {
         const result = await db.query(
-            `SELECT * FROM users WHERE id = $1`,
+            `SELECT * FROM players WHERE id = $1`,
             [id]
         );
         return result.rows[0];
@@ -76,8 +76,8 @@ export async function getUserById (id) {
     }
 }
 
-// UPDATE user by ID
-export async function updateUser ({ id, first_name, last_name, email, password }) {
+// UPDATE player by ID
+export async function updatePlayer ({ id, first_name, last_name, email, password }) {
     try {
         const fields = [];
         const values = [];
@@ -102,7 +102,7 @@ export async function updateUser ({ id, first_name, last_name, email, password }
             throw new Error('No fields provided to update.');
         }
         const result = await db.query(
-            `UPDATE users SET
+            `UPDATE players SET
             ${fields.join(', ')}
             WHERE id = $${paramIdx}
             RETURNING *;`,
@@ -110,20 +110,20 @@ export async function updateUser ({ id, first_name, last_name, email, password }
         );
         return result.rows[0];
     } catch (error) {
-        console.error('Error updating user. Please try again.', error.message);
+        console.error('Error updating player. Please try again.', error.message);
         throw error;
     }
 }
 
-// DELETE user by ID
-export async function deleteUser (id) {
+// DELETE player by ID
+export async function deletePlayer (id) {
     try {
         const result = await db.query(
-            `DELETE FROM users WHERE id = $1`,
+            `DELETE FROM players WHERE id = $1`,
             [id]
         );
     } catch (error) {
-        console.error('Error deleting user. Please try again.', error.message);
+        console.error('Error deleting player. Please try again.', error.message);
         throw error;
     }
 }

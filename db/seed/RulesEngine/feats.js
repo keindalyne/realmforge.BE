@@ -28,13 +28,13 @@ export async function seedFeats() {
       ('actor', 'Actor',
         ARRAY[
           'Skilled at mimicry and dramatics, you gain the following benefits:',
-          '- Increase your Charisma by 1, to a maximum of 20.',
+          '- Increase your Characterisma by 1, to a maximum of 20.',
           '- You have advantage on Deception and Performance checks when trying to pass yourself off as a different person.',
           '- You can mimic the speech or writing of another person or the sounds made by other creatures you have heard. A listener can tell they are faked with a successful Insight check.'
         ],
         null
       ),
-      ('charger', 'Charger',
+      ('characterger', 'Characterger',
         ARRAY[
           'When you use your action to Dash, you can use a bonus action to make one melee weapon attack or shove a creature.',
           'If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack) or push the target up to 10 feet away from you (if you chose to shove).'
@@ -126,9 +126,9 @@ export async function seedFeats() {
       ('inspiring-leader', 'Inspiring Leader',
         ARRAY[
           'You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (including yourself) within 30 feet who can see or hear you and who can understand you.',
-          'Each creature can gain temporary hit points equal to your level + your Charisma modifier.'
+          'Each creature can gain temporary hit points equal to your level + your Characterisma modifier.'
         ],
-        '{"charisma": 13}'
+        '{"characterisma": 13}'
       ),
       ('keen-mind', 'Keen Mind',
         ARRAY[

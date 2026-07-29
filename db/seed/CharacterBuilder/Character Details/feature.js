@@ -61,7 +61,7 @@ export async function seedFeature() {
       ]),
       ('spellcasting-bard', 'Spellcasting', ARRAY[
         'You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music.',
-        'You use Charisma as your spellcasting ability.'
+        'You use Characterisma as your spellcasting ability.'
       ]),
       ('jack-of-all-trades', 'Jack of All Trades', ARRAY[
         'Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.'
@@ -77,9 +77,9 @@ export async function seedFeature() {
       ('font-of-inspiration', 'Font of Inspiration', ARRAY[
         'Beginning at 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.'
       ]),
-      ('countercharm', 'Countercharm', ARRAY[
+      ('countercharacterm', 'Countercharacterm', ARRAY[
         'At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects.',
-        'As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet who can hear you have advantage on saving throws against being frightened or charmed.'
+        'As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet who can hear you have advantage on saving throws against being frightened or charactermed.'
       ]),
       ('magical-secrets', 'Magical Secrets', ARRAY[
         'By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines.',
@@ -210,7 +210,7 @@ export async function seedFeature() {
         'When you are subjected to an effect that allows you to make a Dexterity saving throw to take half damage, you instead take no damage on a success, and only half on a fail.'
       ]),
       ('stillness-of-mind', 'Stillness of Mind', ARRAY[
-        'Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.'
+        'Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charactermed or frightened.'
       ]),
       ('purity-of-body', 'Purity of Body', ARRAY[
         'At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.'
@@ -255,7 +255,7 @@ export async function seedFeature() {
         'Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.'
       ]),
       ('aura-of-protection', 'Aura of Protection', ARRAY[
-        'Starting at 6th level, whenever you or a friendly creature within 10 feet of you makes a saving throw, they gain a bonus equal to your Charisma modifier.'
+        'Starting at 6th level, whenever you or a friendly creature within 10 feet of you makes a saving throw, they gain a bonus equal to your Characterisma modifier.'
       ]),
       ('cleansing-touch', 'Cleansing Touch', ARRAY[
         'Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature you touch.'
@@ -360,7 +360,7 @@ export async function seedFeature() {
       -- SORCERER FEATURE
       ('spellcasting-sorcerer', 'Spellcasting', ARRAY[
         'You can cast sorcerer spell drawn from the sorcerer spell list.',
-        'Charisma is your spellcasting ability for your sorcerer spell.'
+        'Characterisma is your spellcasting ability for your sorcerer spell.'
       ]),
       ('sorcerous-origin', 'Sorcerous Origin', ARRAY[
         'Choose a sorcerous origin, such as Draconic Bloodline or Wild Magic.',
@@ -385,7 +385,7 @@ export async function seedFeature() {
         'Your choice grants you feature at 1st level and again at 6th, 10th, and 14th level.'
       ]),
       ('pact-magic', 'Pact Magic', ARRAY[
-        'You can cast warlock spell using Charisma as your spellcasting ability.',
+        'You can cast warlock spell using Characterisma as your spellcasting ability.',
         'Your spell are regained after a short or long rest, and your spell slots scale with level.'
       ]),
       ('eldritch-invocations', 'Eldritch Invocations', ARRAY[

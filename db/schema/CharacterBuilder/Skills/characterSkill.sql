@@ -1,12 +1,12 @@
-CREATE TABLE char_skill (
-    id SERIAL PRIMARY KEY NOT NULL,
-    character_id INTEGER NOT NULL
-        REFERENCES character(id)
+CREATE TABLE character_skill (
+    id SERIAL PRIMARY KEY,
+    character_slug TEXT NOT NULL
+        REFERENCES character(slug)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
-    skill_id INTEGER NOT NULL
-        REFERENCES skill(id)
+    skill_slug TEXT NOT NULL
+        REFERENCES skill(slug)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
-    UNIQUE (character_id, skill_id)
-)
+    UNIQUE (character_slug, skill_slug)
+);
