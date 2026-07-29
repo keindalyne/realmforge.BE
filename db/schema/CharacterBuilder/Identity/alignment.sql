@@ -1,0 +1,5 @@
+CREATE TABLE alignment (
+    id SERIAL PRIMARY KEY NOT NULL,
+    slug INTEGER NOT NULL,
+
+)
